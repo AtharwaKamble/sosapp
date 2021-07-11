@@ -13,6 +13,8 @@ public class Splash1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash1);
         
+        getSupportActionBar().hide();
+       
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
