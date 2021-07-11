@@ -52,6 +52,15 @@ public class SosActivity extends AppCompatActivity {
         });
 
 
+     profileimage.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+
+             Intent intent = new Intent(SosActivity.this,ProfileActivity.class);
+             startActivity(intent);
+
+         }
+     });
 
     }
 
