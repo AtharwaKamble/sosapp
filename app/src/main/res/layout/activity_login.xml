@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#282C35"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="40dp"
+        android:transitionName="logo_trans"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo"
+        />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:background="@drawable/edit_text_background1"
+        android:id="@+id/rel_phone"
+        android:layout_marginTop="2dp"
+        android:layout_marginHorizontal="50dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="15dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91"
+                android:textSize="20dp"
+                android:textColor="#111111"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:id="@+id/no"
+               />
+
+            <EditText
+
+                android:id="@+id/phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:background="@android:color/transparent"
+                android:inputType="number"
+                android:layout_marginHorizontal="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_toRightOf="@id/no"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <Button
+        android:id="@+id/get_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_phone"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_background_register_start"
+        android:text="Get OTP"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:textStyle="bold"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/rel_phone"
+        android:visibility="gone"
+        android:id="@+id/progress_bar"/>
+
+
+
+
+
+</RelativeLayout>

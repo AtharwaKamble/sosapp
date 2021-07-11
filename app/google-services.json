@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "100532936166",
+    "firebase_url": "https://sosapp-aa44d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "sosapp-aa44d",
+    "storage_bucket": "sosapp-aa44d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100532936166:android:6ee1a2bc32e1e8ec41ca27",
+        "android_client_info": {
+          "package_name": "com.darkcode.sosapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "100532936166-hcfbk18isdjlnliqf03fr9lq5tr333p0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.darkcode.sosapp",
+            "certificate_hash": "a3c9cdc700f0c48a3584ed47ffc503dc6eac8424"
+          }
+        },
+        {
+          "client_id": "100532936166-8e79h6fha758unsv88mt3628701hcfu3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaIzAQW9NG3L3dfyyafLHwTuTs61vxwxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100532936166-8e79h6fha758unsv88mt3628701hcfu3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:orientation="vertical"
+    tools:context=".SosActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="30dp"
+            android:src="@drawable/logo"
+            android:id="@+id/profile_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text="Name"
+            android:layout_gravity="center_vertical"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:maxLength="15"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background"
+        >
+
+        <Button
+            android:id="@+id/sos_button"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/sos_but_background"
+            android:text="SOS"
+            android:textSize="60dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donations"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/sos_button"
+            android:layout_marginTop="20dp"
+            android:id="@+id/text_donations"
+            android:textSize="40dp"
+            android:textColor="#111111"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_donations"
+            android:id="@+id/linear_police"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POLICE"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#111111"
+                android:layout_marginLeft="40dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/donate_police"
+                android:text="DONATE"
+                android:background="@drawable/btn_background_register_start"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_police"
+            android:id="@+id/linear_ngo"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  NGO   "
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#111111"
+                android:layout_marginLeft="40dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/donate_ngo"
+                android:text="DONATE"
+                android:background="@drawable/btn_background_register_start"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="contact us"
+            android:layout_below="@+id/linear_ngo"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_background_login_start"
+            android:layout_marginHorizontal="27dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:id="@+id/contact_us"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

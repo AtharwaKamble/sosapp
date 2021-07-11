@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ContactUsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:textStyle="bold"
+        android:textSize="45dp"
+        android:layout_margin="20dp"
+        android:textColor="#111111"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you have any query"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="#111111"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please ask here ..."
+        android:layout_marginHorizontal="20dp"
+        android:textColor="#111111"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background1"
+        android:layout_margin="20dp"
+        android:hint="Full Name"
+        android:padding="20dp"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background1"
+        android:layout_margin="20dp"
+        android:hint="Write a message"
+        android:inputType="textImeMultiLine"
+        android:padding="50dp"
+        android:lines="4"
+        android:textSize="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/send_message"
+        android:background="@drawable/btn_background_register_start"
+        android:layout_margin="20dp"
+        android:text="Send Message"
+        android:textColor="#ffffff"
+        android:padding="20dp"/>
+
+
+
+
+
+
+
+</LinearLayout>
