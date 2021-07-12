@@ -27,8 +27,9 @@
                 android:layout_height="200dp"
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
+                android:src="@drawable/final_logo"
                 android:padding="10dp"
-                android:src="@drawable/logo"
+                android:transitionName="profileTrans"
                 android:id="@+id/profile_image"/>
 
 
