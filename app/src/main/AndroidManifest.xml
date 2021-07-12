@@ -13,13 +13,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sosapp">
-        <activity android:name=".ContactUsActivity"
-            android:parentActivityName=".SosActivity"
-            ></activity>
+        <activity android:name=".ProfileViewActivity"></activity>
+        <activity
+            android:name=".ContactUsActivity"
+            android:parentActivityName=".SosActivity" />
         <activity android:name=".Splash2Activity" />
         <activity android:name=".Splash1Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -29,7 +31,7 @@
             android:theme="@style/Base.Theme.AppCompat" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".OTPActivity" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
     </application>
 
 </manifest>

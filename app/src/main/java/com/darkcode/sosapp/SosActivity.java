@@ -37,8 +37,9 @@ public class SosActivity extends AppCompatActivity {
         contactUs = findViewById(R.id.contact_us);
         profileimage = findViewById(R.id.profile_image);
 
+        mAuth = FirebaseAuth.getInstance();
+
         rootRef = FirebaseDatabase.getInstance("https://sosapp-aa44d-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference().child("Users");
-        userId = mAuth.getCurrentUser().getUid();
 
         getInfo();
 
@@ -56,7 +57,7 @@ public class SosActivity extends AppCompatActivity {
          @Override
          public void onClick(View v) {
 
-             Intent intent = new Intent(SosActivity.this,ProfileActivity.class);
+             Intent intent = new Intent(SosActivity.this,ProfileViewActivity.class);
              startActivity(intent);
 
          }
@@ -65,8 +66,7 @@ public class SosActivity extends AppCompatActivity {
     }
 
     private void getInfo() {
-        FirebaseDatabase.getInstance("https://sosapp-aa44d-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference().child("Users")
-                .child(mAuth.getCurrentUser().getUid()).addValueEventListener(new ValueEventListener() {
+       rootRef.child(mAuth.getCurrentUser().getUid()).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 

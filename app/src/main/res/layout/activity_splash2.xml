@@ -7,35 +7,44 @@
     android:layout_height="match_parent"
     tools:context=".Splash2Activity">
 
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:layout_margin="50dp"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/splash2_image"
-        android:id="@+id/final_logo"/>
-
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/final_logo"
-        android:text="No one is Safe"
-        android:textSize="40dp"
-        android:textStyle="bold"
-        android:textColor="#ffffff"
-        android:id="@+id/txt1"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerInParent="true"
+        >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txt1"
-        android:text="Untill Everyone Is"
-        android:textSize="40dp"
-        android:textStyle="bold"
-        android:textColor="#ffffff"
-        android:id="@+id/txt2"
-        android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_margin="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/splash2_image"
+            android:id="@+id/final_logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/final_logo"
+            android:text="No one is Safe"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:id="@+id/txt1"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt1"
+            android:text="Untill Everyone Is"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:id="@+id/txt2"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
 
 
 </RelativeLayout>
